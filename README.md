@@ -140,7 +140,7 @@ DEG Data         ──┤
                    │  Centrality-based target ranking
                    ▼
           [Step 7] sampleMetNetworks()
-                   │  ACHR/optGpSampler flux sampling
+                   │  Riemannian-Hamiltonian Monte Carlo (RHMC) flux sampling
                    ▼
           [Step 8a] averageMATADOR()    ← cohort-level scores
           [Step 8b] personalizedMATADOR() ← patient-level scores
@@ -155,7 +155,7 @@ DEG Data         ──┤
 
 ### Step 1 — Environment Setup
 
-Run at the start of any session, or place at the top of your entry-point script.
+Run at the start of any session, or place at the top of your entry-point script. The .m files in src/m_files can be used when MATLAB live editor for .mlx files is not conventient.
 
 ```matlab
 clearvars;
