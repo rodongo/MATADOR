@@ -43,7 +43,7 @@ Two analysis modes are provided:
 | Gurobi | v11.0 |
 | COBRA Toolbox | v3.1 |
 | RAVEN Toolbox | v2.8.7 |
-| Human-GEM | latest (place under `./Human-GEM-main/`) |
+| Human-GEM | v1.15.0 |
 | Parallel Computing Toolbox | any |
 
 All COBRA and RAVEN toolbox paths must be reachable from the MATLAB path before running the pipeline. Gurobi must be configured as the default COBRA solver.
