@@ -412,7 +412,7 @@ Core binary perturbation engine. Fully blocks all consuming reactions of one met
 | `simMetab` | string | Metabolite name (for logging) |
 | `KOrxn` | cell/char | Reaction IDs to block |
 | `rxnFBS` | numeric vector | Forward/Backward/Unchanged labels per reaction |
-| `VRefDis` | numeric vector | Healthy reference flux distribution |
+| `VRefDis` | numeric vector | Disease reference flux distribution |
 
 Returns `antiMetabScore.MATADOR_Score` (scalar) and `antiMetabScore.fluxMOMA` (flux vector).
 
@@ -427,7 +427,7 @@ Loops over all metabolites in the target file and calls both `MATADOR` (MOMA-bas
 | `dModel` | Disease-state COBRA model |
 | `files` | Path to the metabolite target `.xlsx` file |
 | `diffFBS` | Forward/Backward/Unchanged vector |
-| `VRefDis` | Healthy reference flux distribution |
+| `VRefDis` | Disease reference flux distribution |
 | `saveLoc` | Output directory |
 | `sampleName` | Output file prefix |
 
