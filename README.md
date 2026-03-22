@@ -290,7 +290,7 @@ Output is written to `AMS_iMAT_FisherTest.xlsx` with one sheet per dataset. Each
 
 ### Step 6 — Extract Metabolite Target List (R)
 
-This step runs outside MATLAB. Use `prepareMetaboliteTargetList.R` to build the metabolite-metabolite interaction network from the Fisher test output, compute betweenness and closeness centrality per network module, and export ranked candidate targets.
+This step runs outside MATLAB. Use `prepareMetaboliteTargetList.R` to build the metabolite-metabolite interaction network from the Fisher test output, compute betweenness and closeness centrality per network module, and export ranked candidate targets. The input files required to run this script can be downloaded from [Zenodo](https://zenodo.org/records/19140042). The current implemenation was performed in R v4.4.1 and the environment R package versions are provided in [SRC](https://github.com/rodongo/MATADOR/blob/main/src/env_packages.yml) folder.
 
 The R script produces one `.xlsx` file per dataset in `Metabolite Reports/Metabolite Targets/`, named `<DatasetName>_BetweennessTopList.xlsx`. Refer to the R script documentation for parameters including currency metabolite exclusion lists and the `topNPercent` selection threshold.
 
@@ -298,7 +298,7 @@ The R script produces one `.xlsx` file per dataset in `Metabolite Reports/Metabo
 
 ### Step 7 — Sample Metabolic Networks
 
-Network sampling defines the healthy reference flux distribution (`VRefDis`) and the `rxnFBS` vector required by MATADOR. Both average and personalized sampling use the same function, controlled by the mode flag.
+Network sampling defines the disease reference flux distribution (`VRefDis`) and the `rxnFBS` vector required by MATADOR. Both average and personalized sampling use the same function, controlled by the mode flag.
 
 ```matlab
 changeCobraSolver('gurobi', 'all');
