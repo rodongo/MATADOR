@@ -495,6 +495,7 @@ MATADOR scores reflect the cosine-like similarity (computed by `MATADOR_TS`/`aTS
 |---|---|
 | High positive | Blocking this metabolite pushes flux towards the healthy state — strong antimetabolite candidate |
 | Near zero | Inhibition has minimal effect on network state |
+| High negative | Blocking this metabolite pushes flux towards the disease state — an unlikely antimetabolite candidate |
 | `-Inf` | QP infeasible, or flux norm < 1 (degenerate solution); metabolite likely essential to network feasibility under given constraints |
 
 For the graded analysis, a monotonically increasing score from grade 0 → 0.75 suggests that even partial inhibition is therapeutically meaningful, making the metabolite a more tractable drug target.
